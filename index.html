@@ -11,16 +11,16 @@
 </head>
 
 <body>
-	<section class="sidebar__content">
+	<section class="sidebar">
 		<div class="sidebar__holder">
-			<button class="icon icon-close"></button>
+			<button class="sidebar__icon close"></button>
 			<a class="sidebar__logo" href="#"></a>
-			<button class="icon icon-search"></button>
+			<button class="sidebar__icon search"></button>
 		</div>
-		<nav class="sidebar-nav">
+		<nav class="sidebar__nav sidebar-nav">
 			<ul class="sidebar-nav__list">
 				<li class="sidebar-nav__item">
-					<a class="sidebar-nav__link" href="#">Ремонт техники</a>
+					<a class="sidebar-nav__link active" href="#">Ремонт техники</a>
 				</li>
 				<li class="sidebar-nav__item">
 					<a class="sidebar-nav__link" href="#">Услуги и сервисы</a>
@@ -47,21 +47,18 @@
 		</nav>
 		<div class="sidebar__holder">
 			<div class="sidebar__btns-list">
-				<button class="icon icon-call"></button>
-				<button class="icon icon-chat"></button>
-				<button class="icon icon-profile"></button>
+				<button class="sidebar__icon call"></button>
+				<button class="sidebar__icon chat"></button>
+				<button class="sidebar__icon profile"></button>
 			</div>
 			<a class="sidebar__link-email" href="mailto:mail@cps.com">mail@cps.com</a>
 			<a class="sidebar__link-phone" href="tel:88008908900">8 800 890 8900</a>
 		</div>
-		<form class="sidebar__lang-list lang-widget" action="">
-			<input id="RU" class="lang-widget__btn" type="radio" name="select-language" checked="checked"> 
-			<label for="RU" class="lang-widget__list-item">RU</label> 
-			<input id="EN" class="lang-widget__btn" type="radio" name="select-language"> 
-			<label for="EN" class="lang-widget__list-item">EN</label> 
-			<input id="CH" class="lang-widget__btn" type="radio" name="select-language"> 
-			<label for="CH" class="lang-widget__list-item">CH</label>
-		</form>
+		<div class="sidebar__lang-list">
+			<a class="sidebar__lang-item active">RU</a> 
+			<a class="sidebar__lang-item">EN</a> 
+			<a class="sidebar__lang-item">CH</a>
+		</div>
 	</section>
 </body>
 
